@@ -7,20 +7,17 @@ Vue.use(Router)
 //一级路由
 import Home from '../pages/home/home'
 import Class from '../pages/class/class'
-import Market from '../pages/market/market.vue'
+import Market from '../pages/market/market'
 import Cart from '../pages/cart/cart'
 import Mine from '../pages/mine/mine'
 
 //二级路由
-import Recommend from '../pages/home/recommend'
-import Nut from '../pages/home/nut'
-import Meat from '../pages/home/meat'
-import Variety from '../pages/home/variety'
-import Snack from '../pages/home/snack'
-import Chaoli from '../pages/home/chaoli'
-import Tea from '../pages/home/tea'
-import Rim from '../pages/home/rim'
-
+import MineList from '../components/mine/mineList'
+import Fukuan from '../components/mine/fukuan'
+import Fahuo from '../components/mine/fahuo'
+import Shouhuo from '../components/mine/shouhuo'
+import Pingjia from '../components/mine/pingjia'
+import Shouhou from '../components/mine/shouhou'
 
 
 export default new Router({
@@ -29,16 +26,6 @@ export default new Router({
 			path: '/',
 			name: 'home',
 		 	component: Home,
-		 	children: [
-		 		{ path: '/', name: 'recommend', component: Recommend },
-		 		{ path: '/nut', name: 'nut', component: Nut },
-		 		{ path: '/meat', name: 'meat', component: Meat },
-		 		{ path: '/variety', name: 'variety', component: Variety },
-		 		{ path: '/snack', name: 'snack', component: Snack },
-		 		{ path: '/chaoli', name: 'chaoli', component: Chaoli },
-		 		{ path: '/tea', name: 'tea', component: Tea },
-		 		{ path: '/rim', name: 'rim', component: Rim },
-		 	]
 		},
 		{
 			path: '/class',
@@ -59,6 +46,36 @@ export default new Router({
 			path: '/mine',
 			name: 'mine',
 		 	component: Mine,
-		}
+		},
+		{
+			path: '/mineList',
+			name: 'mineList',
+			component: MineList,
+		},
+		{
+			path: '/fukuan',
+			name: 'fukuan',
+			component: Fukuan,
+		},
+		{
+			path: '/fahuo',
+			name: 'fahuo',
+			component: Fahuo,
+		},
+		{
+			path: '/shouhuo',
+			name: 'shouhuo',
+			component: Shouhuo,
+		},
+		{
+			path: '/pingjia',
+			name: 'pingjia',
+			component: Pingjia,
+		},
+		{
+			path: '/shouhou',
+			name: 'shouhou',
+			component: Shouhou,
+		},
 	]
 })

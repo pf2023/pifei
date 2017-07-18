@@ -1,28 +1,15 @@
 <!DOCTYPE html>
-<html style="fontSize: 129.375%">
+<html style="font-size: 100%;">
 	<head>
 		<meta charset="utf-8">
 		<title>3Squirrels</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<script type="text/javascript" src="./static/lib/swiper.js"></script>
-		<link rel="stylesheet" href="./static/lib/swiper.css">
+		<script type="text/javascript" src="./static/lib/flexible.js"></script>
+		<script type="text/javascript" src="./static/lib/rem.js"></script>
 	</head>
+
 	<body>
 		<div id="app"></div>
 		<!-- built files will be auto injected -->
 	</body>
-	<script type="text/javascript">
-		(function (doc, win) {
-		    var docEl = doc.documentElement,
-		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-		        recalc = function () {
-		        	var clientWidth = docEl.clientWidth;
-		        	if (!clientWidth) return;
-		        	docEl.style.fontSize = 1.29375 * (clientWidth / 414) + 'px';
-		        };
-		    if (!doc.addEventListener) return;
-		    win.addEventListener(resizeEvt, recalc, false);
-		    doc.addEventListener('DOMContentLoaded', recalc, false);
-		})(document, window);
-	</script>
 </html>

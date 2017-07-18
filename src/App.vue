@@ -33,21 +33,25 @@ export default {
   margin:0
 }
 ul{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  line-height: 46px;
-  background-color: #dfdfdf;
-  bottom:0;
-  left:0;
-  right:0
+	z-index: 100;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	line-height: 4.083333rem;
+	height: 4.083333rem;
+	bottom:0;
+	left:0;
+	right:0;
+    background-color: #ffffff;
 }
 ul li{
-  width:25%;
-  text-align: center;
+	font-size: 100%;
+	width:25%;
+	text-align: center;
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 </style>
